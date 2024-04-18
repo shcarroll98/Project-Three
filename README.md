@@ -8,6 +8,10 @@ We imported the CSV files into Python using Pandas.
 ETL: 
 After merging the two, in MongoDB, we created the new collection. 
 
+Import the dataset with :
+      "mongoimport --type csv -d SP500 -c SP500_ESG --headerline --drop sp500_esg_ceo_info-filtered.csv"
+      "mongoimport --type csv -d SP500 -c date --headerline --drop datefiltered_data.csv"
+                                
 Data sources:
 https://www.kaggle.com/datasets/alistairking/public-company-esg-ratings-dataset
 https://www.kaggle.com/datasets/andrewmvd/sp-500-stocks
